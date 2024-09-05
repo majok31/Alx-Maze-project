@@ -1,5 +1,6 @@
-
 The ALX Project - The Maze Game
+
+
 ![img](https://github.com/user-attachments/assets/dcb8a934-0908-49e2-b659-d1ecebed30a5)
 
 
@@ -102,7 +103,11 @@ The Project Inspiration
 The Maze Game Project is a game directly inspired by Wolfenstein3D, which was developed in 1992. For this project, a game engine was not required.
 
 Author
+
 Peter Ruot Tot
+
 Github
+
 The 3D Maze Game Project Demo(click 👇)
+
 The 3D Maze Project
