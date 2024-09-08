@@ -1,8 +1,18 @@
-build:
-	gcc -Wall -Werror -Wextra -pedantic ./src/*.c -lm -o maze `sdl2-config --cflags` `sdl2-config --libs`;
+CC = gcc
+CFLAGS = -I/usr/include/SDL2 -D_REENTRANT
+LDFLAGS = -L/usr/lib -lSDL2 -lSDL2_image -lm
+SRC = $(wildcard src/*.c)
+OBJ = $(SRC:.c=.o)
+TARGET = maze_game
 
-run:
-	./maze;
+all: $(TARGET)
+
+$(TARGET): $(OBJ)
+	$(CC) -o $@ $^ $(LDFLAGS)
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm maze;
+	rm -f $(OBJ) $(TARGET)
+
