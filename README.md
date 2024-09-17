@@ -1,5 +1,5 @@
 The ALX Project - The Maze Game
-
+ 
 
 ![img](https://github.com/user-attachments/assets/dcb8a934-0908-49e2-b659-d1ecebed30a5)
 
@@ -8,8 +8,8 @@ The goal of this Maze Game Project is to create a 3D game using the raycasting t
 
 After the installation of SDL2, the test below was carried out to verify that SDL2 has been correctly installed:
 
-#include <SDL2/SDL.h>
 
+#include <SDL2/SDL.h>
 int main(int argc, char* argv[]) {
     if (SDL_Init(SDL_INIT_VIDEO) != 0) {
         printf("SDL initialization failed: %s\n", SDL_GetError());
